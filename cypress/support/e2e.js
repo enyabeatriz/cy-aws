@@ -18,3 +18,13 @@ import './commands'
 
 // Alternatively you can use CommonJS syntax:
 // require('./commands')
+
+Cypress.Commands.add("getByDataCy",(selector)=>{
+
+    return cy.get(`[data-cy=${selector}]`)
+})
+
+Cypress.Commands.add("getByDataClass",(selector)=>{
+
+    return cy.get(`.${selector}`)
+})
