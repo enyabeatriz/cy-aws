@@ -11,7 +11,10 @@ module.exports = defineConfig({
       on('file:preprocessor', cucumber())
     },
     specPattern: "cypress/e2e/*.feature",
-    "chromeWebSecurity": false
+    "chromeWebSecurity": false,
+    experimentalSessionAndOrigin: true,
+    experimentalRunAllSpecs: true
+
  
   },
   defaultCommandTimeout: 8000,

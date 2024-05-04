@@ -28,3 +28,18 @@ Cypress.Commands.add("getByDataClass",(selector)=>{
 
     return cy.get(`.${selector}`)
 })
+
+Cypress.Commands.add("login", (username, password) => {
+
+    return cy.session([username, password], () => {
+      cy.visit(Cypress.env('url'));
+      cy.get('#nav-link-accountList').click()
+      cy.get('#ap_email').click().type(username)
+      cy.get('.a-button-inner > #continue').click()
+      cy.get('#ap_password').click().type(password)
+      cy.get('#auth-signin-button').click()
+      cy.wait(2000);
+    }, {
+      cacheAcrossSpecs: true
+    })
+  })
