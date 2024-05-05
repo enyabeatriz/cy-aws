@@ -12,12 +12,10 @@ module.exports = defineConfig({
     },
     specPattern: "cypress/e2e/*.feature",
     "chromeWebSecurity": false,
-    experimentalSessionAndOrigin: true,
-    experimentalRunAllSpecs: true
-
- 
+ experimentalSessionAndOrigin: true,
+ experimentalRunAllSpecs:true
   },
-  defaultCommandTimeout: 8000,
- 
+  defaultCommandTimeout: 8000,
+ 
 
 });

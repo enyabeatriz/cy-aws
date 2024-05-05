@@ -1,17 +1,19 @@
 {
-  "name": "solvento-challenge",
+  "name": "amazon_prueba",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "cypress:open":"cypress open"
+    "cypress:open": "cypress open",
+    "cypress:run": "cypress run"
+
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "cypress": "^13.1.0",
+    "cypress": "^13.8.1",
     "cypress-cucumber-preprocessor": "^4.3.1",
+    "cypress-if": "^1.12.0",
     "multiple-cucumber-html-reporter": "^3.6.2"
   },
   "dependencies": {
@@ -20,13 +22,11 @@
   "cypress-cucumber-preprocessor": {
     "nonGlobalStepDefinitions": true,
     "step_definitions": "cypress/e2e/",
-    "cucumberJson":{
-
+    "cucumberJson": {
       "generate": true,
       "outputFolder": "cypress/cucumber-json",
       "filePrefix": "",
-      "fileSufix": ".cucumber"
-
+      "fileSuffix": ".cucumber"
     }
   }
 }
