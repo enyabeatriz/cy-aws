@@ -37,7 +37,7 @@ Si una prueba falla durante su ejecución, Cypress automáticamente tomará una 
 
 ## Ejecución de pruebas:
 
-Para ejecutar los casos de prueba con Cypress, utiliza el comando cypress run desde la línea de comandos. Esto ejecutará todos los tests en modo headless (sin interfaz gráfica).
+Para ejecutar los casos de prueba con Cypress, utiliza el comando npm run cypress:run desde la línea de comandos. Esto ejecutará todos los tests en modo headless (sin interfaz gráfica).
 
 ## Notas Adicionales:
 
