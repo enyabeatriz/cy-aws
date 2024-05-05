@@ -1,6 +1,6 @@
 export const selectors = {
     searchInput: 'input[name="field-keywords"]',
-    firstSearchResult: '.s-result-item.s-asin',
+    firstSearchResult: '.s-image',
     addToCartButton: '#add-to-cart-button',
     cartCount: '#nav-cart-count',
     cartIcon: '#nav-cart',
