@@ -15,7 +15,8 @@ class CartProductPage {
     }
 
     addProductToCart() {
-        cy.get(selectors.addToCartButton).should('be.visible').click();
+        
+        cy.get(selectors.addToCartButton,{ timeout: 10000 }).should('be.visible').click();
         
     }
 

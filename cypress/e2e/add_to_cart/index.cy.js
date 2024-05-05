@@ -29,10 +29,12 @@ Then('I should capture the price from the search results', () => {
 
 When('I click on the first search result', () => {
   cartProductPage.clickFirstSearchResult()
+  
 });
 
 When('I add the product to the cart', () => {
   cartProductPage.addProductToCart()
+  
 });
 
 Then('the product should be added to the cart successfully', () => {

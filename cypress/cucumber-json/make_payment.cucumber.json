@@ -1,0 +1,122 @@
+[
+  {
+    "keyword": "Feature",
+    "name": "Search and simulate purchase on Amazon",
+    "line": 1,
+    "id": "search-and-simulate-purchase-on-amazon",
+    "tags": [],
+    "uri": "make_payment.feature",
+    "elements": [
+      {
+        "id": "search-and-simulate-purchase-on-amazon;searching-for-a-cell-phone,-selecting-the-first-result,-and-simulating-the-payment-process",
+        "keyword": "Scenario",
+        "line": 2,
+        "name": "Searching for a cell phone, selecting the first result, and simulating the payment process",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 3,
+            "name": "I am on the Amazon homepage",
+            "result": {
+              "status": "passed",
+              "duration": 18083000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 4,
+            "name": "I search for \"Celular\"",
+            "result": {
+              "status": "passed",
+              "duration": 3992000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 5,
+            "name": "I should capture the price from the search results",
+            "result": {
+              "status": "passed",
+              "duration": 220000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 6,
+            "name": "I click on the first search result",
+            "result": {
+              "status": "passed",
+              "duration": 12711000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 7,
+            "name": "I add the product to the cart",
+            "result": {
+              "status": "passed",
+              "duration": 3069000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 8,
+            "name": "the product should be added to the cart successfully",
+            "result": {
+              "status": "passed",
+              "duration": 2701000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 9,
+            "name": "the price in the search results should match the price in the cart",
+            "result": {
+              "status": "passed",
+              "duration": 80000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 10,
+            "name": "I proceed to checkout",
+            "result": {
+              "status": "passed",
+              "duration": 303000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 11,
+            "name": "I fill in the required information",
+            "result": {
+              "status": "passed",
+              "duration": 14750000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 12,
+            "name": "I should see the order summary without confirming the purchase",
+            "result": {
+              "status": "passed",
+              "duration": 4393000000
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

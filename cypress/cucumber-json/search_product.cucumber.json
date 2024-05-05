@@ -1,0 +1,52 @@
+[
+  {
+    "keyword": "Feature",
+    "name": "Search for Products on Amazon",
+    "line": 1,
+    "id": "search-for-products-on-amazon",
+    "tags": [],
+    "uri": "search_product.feature",
+    "elements": [
+      {
+        "id": "search-for-products-on-amazon;search-for-a-specific-product",
+        "keyword": "Scenario",
+        "line": 3,
+        "name": "Search for a specific product",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "I open the Amazon page",
+            "result": {
+              "status": "passed",
+              "duration": 3009000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 5,
+            "name": "I search for a product",
+            "result": {
+              "status": "passed",
+              "duration": 6335000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 6,
+            "name": "I should see results containing",
+            "result": {
+              "status": "passed",
+              "duration": 783000000
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

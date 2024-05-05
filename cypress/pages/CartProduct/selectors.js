@@ -6,4 +6,4 @@ export const selectors = {
     cartIcon: '#nav-cart',
     cartListItem: '.sc-list-item-content',
     cartPrice: '.sc-price'
-};
+}

@@ -1,0 +1,42 @@
+[
+  {
+    "keyword": "Feature",
+    "name": "Amazon Page Loading",
+    "line": 1,
+    "id": "amazon-page-loading",
+    "tags": [],
+    "uri": "load_site.feature",
+    "elements": [
+      {
+        "id": "amazon-page-loading;the-amazon-home-page-loads-correctly",
+        "keyword": "Scenario",
+        "line": 2,
+        "name": "The Amazon home page loads correctly",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 3,
+            "name": "I open the Amazon home page",
+            "result": {
+              "status": "passed",
+              "duration": 3729000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 4,
+            "name": "The Amazon logo is visible",
+            "result": {
+              "status": "passed",
+              "duration": 37000000
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

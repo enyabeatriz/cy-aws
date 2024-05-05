@@ -1,0 +1,92 @@
+[
+  {
+    "keyword": "Feature",
+    "name": "Product Search and Price Verification on Amazon",
+    "line": 1,
+    "id": "product-search-and-price-verification-on-amazon",
+    "tags": [],
+    "uri": "add_to_cart.feature",
+    "elements": [
+      {
+        "id": "product-search-and-price-verification-on-amazon;verify-product-price-at-search-result-level",
+        "keyword": "Scenario",
+        "line": 2,
+        "name": "Verify product price at search result level",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 3,
+            "name": "I am on the Amazon homepage",
+            "result": {
+              "status": "passed",
+              "duration": 16474000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 4,
+            "name": "I search for \"Celular\"",
+            "result": {
+              "status": "passed",
+              "duration": 3982000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 5,
+            "name": "I should capture the price from the search results",
+            "result": {
+              "status": "passed",
+              "duration": 161000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 6,
+            "name": "I click on the first search result",
+            "result": {
+              "status": "passed",
+              "duration": 8859000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 7,
+            "name": "I add the product to the cart",
+            "result": {
+              "status": "passed",
+              "duration": 3180000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 8,
+            "name": "the product should be added to the cart successfully",
+            "result": {
+              "status": "passed",
+              "duration": 2923000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 9,
+            "name": "the price in the search results should match the price in the cart",
+            "result": {
+              "status": "passed",
+              "duration": 195000000
+            }
+          }
+        ]
+      }
+    ]
+  }
+]
