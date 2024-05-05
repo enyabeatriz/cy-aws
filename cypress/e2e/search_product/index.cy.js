@@ -1,13 +1,21 @@
 import { Given, When, Then } from "cypress-cucumber-preprocessor/steps";
-import SearchResultPage from '../../pages/SearchProduct';
+import HomePage from '../../pages/Home';
+import SearchProductPage from '../../pages/SearchProduct';
 
-const searchResultPage = new SearchResultPage();
+const homePage = new HomePage();
+const searchResultPage = new SearchProductPage();
 
-beforeEach(()=>{
-  cy.login('1124047465','*Valeny30')
-  })
+beforeEach(() => {
+  cy.login()
+})
+
+
+afterEach(() => {
+  cy.cleanCart()
+})
+
 Given('I open the Amazon page', () => {
-    searchResultPage.visit();
+  homePage.visit();
 });
 
 When('I search for a product', () => {
